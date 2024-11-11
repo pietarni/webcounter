@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+<head>
+  <meta charset="UTF-8">
+  <title>Laskuri</title>
+</head>
+<body>
+  <h2>Ohtulaskuri</h2>
+  <div>nappia painettu {{ value }} kertaa</div>
+  <form action="/increment" method="POST">
+    <input type="submit" value="Paina">
+  </form>
+  <form action="/reset" method="POST">
+    <input type="submit" value="Nollaa">
+  </form>
+  <form action="/setvalue" method="POST">
+    <label for="value">Aseta arvo:</label>
+    <input type="number" id="laskuri_value" name="value" required>
+    <input type="submit" value="Aseta">
+  </form>
+</body>
+</html>
